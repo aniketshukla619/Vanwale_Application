@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "220075116380",
+    "firebase_url": "https://vanwale-e1744.firebaseio.com",
+    "project_id": "vanwale-e1744",
+    "storage_bucket": "vanwale-e1744.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:220075116380:android:1b3a493b27e96558",
+        "android_client_info": {
+          "package_name": "com.example.android.vanwale"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "220075116380-o02qbm3m5c0v5kdj582i5bsmq4bps62u.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.android.vanwale",
+            "certificate_hash": "c70a97df9ab988083a4cca80c484ee8e6df03f58"
+          }
+        },
+        {
+          "client_id": "220075116380-4acqa1af02p3nm7rhp49ch7f8924c3m3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBUP4hYu3Efuwg8-BhiYzd8lyyY1p_RmSw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "220075116380-4acqa1af02p3nm7rhp49ch7f8924c3m3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    >
+
+    <TextView
+        android:id="@+id/text_head"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="sans-serif-black"
+        android:text="FILL STUDENT DETAIL"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:layout_centerHorizontal="true"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/student"
+        android:layout_below="@+id/text_head"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+     android:padding="10dp"
+        android:scrollbars="vertical"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"
+        android:text="SUBMIT"
+        android:id="@+id/submit"
+        android:background="@color/colorPrimary"
+        android:textColor="#ffffff"
+        android:textSize="18sp"
+        android:fontFamily="sans-serif"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        />
+
+</RelativeLayout>

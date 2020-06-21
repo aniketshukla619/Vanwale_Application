@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Van Wale</string>
+    <string name="mob_no">Enter your phone number to proceed</string>
+    <string name="login_signup">LOGIN/SIGNUP</string>
+    <string name="button_name">CONTINUE</string>
+    <string name="_10_digit_mobile_number">10 digit mobile number</string>
+    <string name="sign_up">SIGN UP</string>
+    <string name="info">Create an account with the new phone number</string>
+    <string name="resend">Resend</string>
+    <string name="otp_info">Otp sent to your phone number</string>
+    <string name="enter_otp">Enter OTP</string>
+    <string name="verify_details">Verify Details</string>
+    <string name="api">AIzaSyA94oaWFdXMHuNkvdw0llBD3wpBX82VDgA</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

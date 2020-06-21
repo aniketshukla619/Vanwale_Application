@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/card"
+    android:visibility="gone"
+    android:layout_width="wrap_content"
+    android:layout_marginBottom="10dp"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="6dp"
+    app:cardElevation="6dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2">
+                <TextView
+                    android:id="@+id/text_head"
+                    android:layout_width="220dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="sans-serif-black"
+                    android:text="VAN NAME"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    android:layout_marginLeft="10dp"/>
+                <Button
+                    android:id="@+id/name"
+                    android:layout_width="wrap_content"
+                  
+                    android:layout_height="25dp"
+                    android:layout_alignRight="@id/text_head"
+                    android:text="No of Seater"
+                    android:textSize="14sp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/rectshape"
+                    android:fontFamily="sans-serif-black"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"/>
+                <TextView
+                    android:id="@+id/places"
+                    android:layout_below="@id/text_head"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="sans-serif-black"
+                    android:text="TO"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    android:layout_marginLeft="10dp"/>
+                <TextView
+                    android:id="@+id/text3"
+                    android:layout_below="@id/places"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="sans-serif"
+                    android:text="Address of to location"
+                    android:textColor="#000000"
+                    android:textSize="14sp"
+                    android:layout_marginLeft="10dp"/>
+                <TextView
+                    android:id="@+id/text4"
+                    android:layout_below="@id/text3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="sans-serif-black"
+                    android:text="FROM"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    android:layout_marginLeft="10dp"/>
+                <TextView
+                    android:id="@+id/text5"
+                    android:layout_below="@id/text4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="sans-serif"
+                    android:text="locations of all the stops van is going"
+                    android:textColor="#000000"
+                    android:textSize="14sp"
+                    android:layout_marginLeft="10dp"/>
+                <Button
+                    android:id="@+id/seats"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+
+                    android:text="No of Seats available"
+                    android:layout_below="@id/text5"
+                    android:textSize="14sp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/rectshape"
+                    android:fontFamily="sans-serif-black"
+                    android:layout_marginLeft="10dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"/>
+                <LinearLayout
+                    android:layout_below="@id/seats"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="20dp">
+                    <Button
+                        android:layout_width="0dp"
+                        android:layout_height="25dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/rectshape"
+                        android:text="DISTANCE"
+                        android:fontFamily="sans-serif-black"
+                        />
+                    <Button
+                        android:id="@+id/price"
+                        android:layout_width="0dp"
+                        android:layout_height="25dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/rectshape"
+                        android:layout_marginLeft="20dp"
+                        android:text="RS./MONTH"
+                        android:fontFamily="sans-serif-black"/>
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+                <ImageView
+                    android:id="@+id/van_image"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/shape2"/>
+                <Button
+                    android:id="@+id/vanno"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:text="Van no"
+                    android:layout_below="@id/van_image"
+                    android:textSize="14sp"
+                    android:background="@drawable/rectshape"
+                    android:fontFamily="sans-serif-black"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="40dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

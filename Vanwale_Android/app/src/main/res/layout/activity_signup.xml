@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp">
+
+
+
+    <TextView
+        android:id="@+id/signup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:text="@string/sign_up"
+        android:textSize="24sp"
+        android:textStyle="normal"
+        android:fontFamily="sans-serif-black"
+        android:textColor="#000000"/>
+
+    <TextView
+        android:id="@+id/info"
+        android:layout_width="275dp"
+        android:layout_height="wrap_content"
+        android:text="@string/info"
+        android:layout_marginTop="5dp"
+        android:textSize="12sp"
+        android:textStyle="normal"
+        android:layout_below="@id/signup"
+        android:fontFamily="sans-serif"
+        />
+
+    <TextView
+        android:id="@+id/phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/_10_digit_mobile_number"
+        android:layout_below="@+id/info"
+        android:textSize="10sp"
+        android:fontFamily="sans-serif"
+        android:layout_marginTop="30dp"
+        />
+
+    <EditText
+        android:id="@+id/phone_no"
+        android:clickable="false"
+        android:editable="false"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/phone"
+        android:textIsSelectable="true"
+        android:inputType="textNoSuggestions|phone"
+        android:maxLength="10"
+        android:fontFamily="sans-serif"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:focusable="true"
+        />
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/Email"
+        android:layout_below="@id/phone_no"
+
+        android:layout_marginTop="20dp">
+        <android.support.design.widget.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/email"
+            android:inputType="textEmailAddress"
+            android:defaultFocusHighlightEnabled="true"
+            android:hint="EMAIL ADDRESS"
+            android:textSize="16sp"
+            android:fontFamily="sans-serif"
+            />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Email"
+      android:id="@+id/Name"
+        android:layout_marginTop="20dp">
+        <android.support.design.widget.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:defaultFocusHighlightEnabled="true"
+            android:hint="NAME"
+            android:id="@+id/name"
+            android:textSize="16sp"
+            android:inputType="textPersonName"
+            android:fontFamily="sans-serif"
+            />
+    </android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Name"
+        android:id="@+id/Password"
+        android:layout_marginTop="20dp"
+        >
+        <android.support.design.widget.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:defaultFocusHighlightEnabled="true"
+            android:hint="PASSWORD"
+            android:id="@+id/password"
+            android:inputType="textPassword"
+            android:textSize="16sp"
+            android:fontFamily="sans-serif"
+            />
+    </android.support.design.widget.TextInputLayout>
+
+    <LinearLayout
+        android:id="@+id/referral"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Password"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="I have a referral code"
+            android:textSize="16sp"
+            android:fontFamily="sans-serif"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/text3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/referral"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+
+            >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="By creating an account, I accept the "
+            android:textSize="12sp"
+            android:fontFamily="sans-serif"/>
+
+        <TextView
+            android:id="@+id/terms"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Terms And Conditions"
+            android:textSize="12sp"
+            android:autoLink="all"
+            android:clickable="true"
+            android:textColor="@color/colorPrimary"
+            android:fontFamily="sans-serif"/>
+        </LinearLayout>
+
+    </LinearLayout>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"
+        android:text="SIGN UP"
+        android:id="@+id/sign"
+        android:background="#ffd800"
+        android:textColor="#ffffff"
+        android:textSize="18sp"
+        android:fontFamily="sans-serif"
+        />
+</RelativeLayout>
